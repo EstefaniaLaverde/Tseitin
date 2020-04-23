@@ -12,7 +12,7 @@
 #                   p=(q>r)
 # Output: B (cadena), equivalente en FNC
 def enFNC(A):
-    assert(len(A)!=4 or len(A)!=7), u"Fórmula incorrecta!"
+    assert(len(A)==5 or len(A)==8), u"Fórmula incorrecta!"
     B = ''
     p = A[0]
     # print('p', p)
@@ -40,7 +40,7 @@ def enFNC(A):
         B = q+"O"+p+"Y-"+r+"O"+p+"Y-"+q+"O"+r+"O-"+p
     else:
         print(u'Error enENC(): Fórmula incorrecta!')
-
+    #print(B)
     return B
 
 # Algoritmo de transformacion de Tseitin
@@ -96,7 +96,9 @@ def Tseitin(A, letrasProposicionalesA):
 
 
     B= Atomo+B
-    #print(len(B))
+
+    print("todos los iff: ",L)
+    #print(B)
     return B
 
     #=================|Fin de implemetación|================================
