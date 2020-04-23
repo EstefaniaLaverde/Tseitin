@@ -8,7 +8,7 @@
 import FNC as fn
 letrasProposicionalesA = ['p', 'q', 'r', 's', 't']
 # # Formula a la cual encontrar su forma clausal
-formula = "-p"
+#formula = "-p"
 
 #========================|descripción de funcionamiento esperado|===================
 #1) Se encuentran las subfórmulas de "-p" excepto la las letras proposicionales que componen a la fórmula: RESULTADO "-p"
@@ -23,7 +23,8 @@ formula = "-p"
 #7) Se toman los átomos de las formulas ya separadas y se meten en listas. Cada paréntesis conforma una lista: RESULTADO [-p],[-x1,-p], [x1,p]
 #8) Cada lista se mete en una lista, la cual va a retornar formaClausal: RESULTADO [[-p],[-x1,-p],[x1,p]]
 #===================================================================================
-
+#formula="((p>q)>r)"
+formula="(pY(-qY-r))"
 #formula = "(pYq)"
 #formula = "(pOq)"
 #formula = "(p>q)"
