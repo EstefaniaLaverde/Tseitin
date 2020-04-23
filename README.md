@@ -1,0 +1,2 @@
+# Tsetin
+ Algoritmo de Tseitin
